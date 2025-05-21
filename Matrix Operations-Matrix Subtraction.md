@@ -32,7 +32,7 @@ def read_matrix(name):
     for i in range(rows):
         row = list(map(int, input(f"{name} - Row {i + 1}: ").split()))
         if len(row) != cols:
-            print("❌ Invalid number of columns. Please restart.")
+            print(" Invalid number of columns. Please restart.")
             exit()
         matrix.append(row)
     return matrix, rows, cols
@@ -49,7 +49,7 @@ def print_matrix(matrix, title="Result"):
 matrix1, rows1, cols1 = read_matrix("Matrix A")
 matrix2, rows2, cols2 = read_matrix("Matrix B")
 if rows1 != rows2 or cols1 != cols2:
-    print("❌ Matrices must have the same dimensions for subtraction.")
+    print(" Matrices must have the same dimensions for subtraction.")
 else:
     result = subtract_matrices(matrix1, matrix2)
     print_matrix(matrix1, "Matrix A")
