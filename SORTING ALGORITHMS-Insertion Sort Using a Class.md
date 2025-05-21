@@ -54,7 +54,7 @@ class InsertionSorter:
                 j -= 1
             self.numbers[j + 1] = key
     def display_sorted_list(self):
-        print("✅ Sorted list:", self.numbers)
+        print("Sorted list:", self.numbers)
 sorter = InsertionSorter()
 sorter.input_numbers()
 sorter.insertion_sort()
